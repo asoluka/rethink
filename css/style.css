@@ -1,9 +1,16 @@
+:root {
+	--blue: #0008b1;
+	--gold: #d3af35;
+	--blueVariant: #0008b185;
+}
+
 * {
 	/*border: 1px solid black;*/
 }
 
 .bg-dark {
-    background-color: #08143c!important;
+	/*#08143c */
+    background-color: var(--blue) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11,7 +18,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #ffecb4 !important;
+    color: var(--gold) !important;
 }
 
 .padd {
@@ -32,7 +39,7 @@
 
 .gold {
 	/*#ffd863*/
-	color: #ffecb4 !important;
+	color: var(--gold) !important;
 }
 
 .curved-border {
@@ -52,7 +59,7 @@ section.speakers, section.testimonies {
 
 section.contact {
 	/*08143c*/
-	background-color: #08143c;
+	background-color: var(--blue);
 	color: white;
 }
 
@@ -103,17 +110,17 @@ h1, h2, h3, h4, h5, h6 {
 
 span.color-theme {
 	/*4353ff*/
-	background-color: #08143c;
+	background-color: var(--blue);
 	color: white;
 	padding: 5px 25px;
 	border-radius: 20px;
 }
 
-div.color-theme { background-color: #08143c; color: white; padding-top: 10px; padding-bottom: 10px;}
+div.color-theme { background-color: var(--blue); color: white; padding-top: 10px; padding-bottom: 10px;}
 
 .color-h3 {color: #605F5FFF;}
 .btn {
-	background-color: #08143c;
+	background-color: var(--blue);
 	color: white;
 	border-radius: 0px;
 	/*letter-spacing: .1em;*/
@@ -165,13 +172,13 @@ p {
 #clockdiv > div{
 	padding: 5px;
 	border-radius: 3px;
-	background: #172450a8;
+	background: var(--blueVariant);
 }
 
 #clockdiv div > span{
 	padding: 10px;
 	border-radius: 3px;
-	background: #08143c;
+	background: var(--blue);
 	display: inline-block;
 }
 
