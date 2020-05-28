@@ -4,17 +4,20 @@
 	--blueVariant: #0008b185;
 }
 
-* {
-	/*border: 1px solid black;*/
+.inherit-height {
+	min-height: inherit;
 }
 
 .bg-dark {
 	/*#08143c */
-    background-color: var(--blue) !important;
+	background-color: var(--blue) !important;
+	/* background-color: white !important; */
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: white !important;
+.navbar-dark .navbar-nav .nav-link, .navbar-brand {
+	color: white !important;
+	/* color: var(--blue) !important;
+	font-weight: bolder; */
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -53,7 +56,7 @@ section.heading {
   	background-size: contain;
 }
 
-section.speakers, section.testimonies {
+section.speakers, section.testimonies, section.about-event {
 	background-color: #F6F6F5;
 }
 
@@ -100,7 +103,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Chelsea Market', cursive;
 }
 
 .small-text { font-size: .85em; }
@@ -127,7 +130,7 @@ div.color-theme { background-color: var(--blue); color: white; padding-top: 10px
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Caudex', serif;
 }
 
 .break {
@@ -190,4 +193,40 @@ p {
 .spaced {
 	display: flex;
 	justify-content: space-between;
+}
+
+.lagos-card, .abuja-card {
+	background-color: white;
+	min-height: 60vh;
+	border-radius: 10px;
+}
+
+.lagos-left, .abuja-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-size: cover;
+}
+
+.lagos-left > h3, .abuja-left > h3 {
+	padding: 10px;
+	background: rgba(0,0,0,0.60);
+}
+
+.lagos-left {
+	background-image: url(../images/lagos/Lagos.jpg);
+}
+
+.abuja-left {
+	background-image: url(../images/abuja/abuja.jpg);
+}
+
+/* small devices */
+@media (max-width: 576px) {
+	.speaker {
+		min-height: 300px;
+	}
 }
